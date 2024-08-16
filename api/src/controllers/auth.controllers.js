@@ -48,6 +48,7 @@ const register = async (req, res) => {
   users.push(newUser);
 
   saveJson("users.json", users);
+
   res.json(newUser);
 };
 
